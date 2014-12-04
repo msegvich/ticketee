@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.rc1'
 # Use jdbcsqlite3 as the database for Active Record
@@ -32,6 +31,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Rspec for testing
+  gem 'rspec-rails', '~> 3.1.0'
+end
+
+group :test do
+  gem 'capybara', '2.4.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
